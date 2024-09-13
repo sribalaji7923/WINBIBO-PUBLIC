@@ -1,0 +1,124 @@
+.footerMain {
+  border-top: 1px solid rgb(255 255 255 / 16%);
+  padding: 25px 10px 0px 10px;
+  .footerLogo {
+    text-align: center;
+    img {
+      height: 44px;
+      cursor: pointer;
+    }
+    .description {
+      color: #ffffffb3;
+      text-align: justify;
+      font-size: 14px;
+      padding: 25px 0px;
+      margin: 0px;
+      font-weight: 100;
+    }
+  }
+  .list {
+    ul {
+      padding: 0px;
+      li.title {
+        color: #ffffffb3;
+        font-size: 14px;
+        font-weight: 100;
+      }
+      li {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 26px;
+        cursor: pointer;
+      }
+    }
+  }
+  .link {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 6px 12px;
+      flex-wrap: wrap;
+      padding: 0px;
+      li {
+        position: relative;
+        font-weight: 400;
+        a {
+          text-decoration: none;
+        }
+        &:last-child {
+          a:after {
+            content: '';
+          }
+        }
+        a {
+          color: #ffffffb3;
+          font-size: 14px;
+          line-height: 24px;
+          &:focus {
+            outline: none;
+          }
+        }
+        a:after {
+          content: '|';
+          padding: 0 3px;
+          position: absolute;
+        }
+      }
+    }
+  }
+  .companyName {
+    text-align: center;
+    padding: 15px 0px;
+    p {
+      color: #ffffffb3;
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+  .footerBanner {
+    text-align: center;
+    padding: 15px 0px;
+    p {
+      color: #ffffffb3;
+      font-size: 14px;
+      font-weight: 100;
+      padding-top: 15px;
+      text-align: justify;
+    }
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footerMain {
+    border-top: 1px solid rgb(255 255 255 / 16%);
+    margin-top: 3rem;
+    .footerLogo {
+      text-align: left;
+    }
+    .link {
+      ul {
+        justify-content: space-between;
+        li {
+          a:after {
+            content: unset;
+          }
+        }
+      }
+    }
+    .footerBanner {
+      p {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      img {
+        width: 230px;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.reasonHead {
+  padding: 35px 0px 45px 0px;
+  h6 {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #75ff93;
+    margin: 0px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    background: linear-gradient(85.98deg, #ffe974 10.89%, #d06cff 91.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+  }
+  .description {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 16px;
+    a {
+      color: #5f16c5 !important;
+      cursor: pointer;
+    }
+  }
+  .reasonCardMain {
+    .reasonCard {
+      background: linear-gradient(82.46deg, #27003a 1.21%, #2a0143 97.93%);
+      display: flex;
+      flex-direction: column;
+      border: 0.41px solid rgba(255, 255, 255, 0.2);
+      flex: 1 1;
+      width: 100%;
+      border-radius: 16px;
+      padding: 16px 13px 13px 13px;
+      height: 100%;
+      gap: 12px;
+      .reasonType {
+        color: #25cf43;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        margin: 0px;
+      }
+      .reasonDec {
+        font-style: normal;
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 13px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 0px;
+        min-height: 30px;
+      }
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .reasonCardMain {
+    .columnRight {
+      padding-right: 5px;
+    }
+    .columnLeft {
+      padding-left: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .reasonHead {
+    h6 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    h3 {
+      font-size: 32px;
+      line-height: 39px;
+      padding: 10px 0px;
+    }
+    .description {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 35px;
+    }
+  }
+}

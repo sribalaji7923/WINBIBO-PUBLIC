@@ -1,0 +1,299 @@
+@import '../../../assets/scss/abstracts/abstracts';
+
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    img {
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .menuIcon img {
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .navItems {
+    display: none;
+    position: relative;
+
+    a {
+      text-align: center;
+      color: #fff;
+      opacity: 0.9;
+      font-size: 14px;
+      font-weight: 100;
+      text-decoration: none;
+      margin: 0 15px;
+      cursor: pointer;
+      text-transform: uppercase;
+      i {
+        margin-left: 5px;
+      }
+      &:hover {
+        color: #fff;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .gameCard {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 200px;
+      padding: 15px;
+      background: #311141;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 1000;
+    }
+    .desktopAllShow {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .desktopAllHide {
+      opacity: 0;
+      transform: scale(0.9);
+      pointer-events: none;
+    }
+    .accordionBodyDesktop {
+      background: #311141;
+      border-radius: 16px;
+      a {
+        font-weight: normal;
+        color: #fff;
+        margin: 0px;
+        text-transform: capitalize;
+        &:hover {
+          color: #ffd85a;
+        }
+      }
+      ul {
+        margin: 0px;
+        li {
+          line-height: 32px;
+          list-style-type: circle;
+          color: #ffd85a;
+        }
+      }
+    }
+    .accordionHeaderDesktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 40px;
+    }
+
+    @media (min-width: 992px) {
+      display: flex;
+    }
+  }
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -800px;
+  width: 260px;
+  height: 100vh;
+  background-color: #311141;
+  transition: right 0.3s ease;
+  padding: 25px 20px;
+  z-index: 102;
+  border-top-left-radius: 15px;
+  &.show {
+    right: 0;
+  }
+  .offBody {
+    text-align: right;
+    .closeIcon {
+      margin-bottom: 10px;
+      i {
+        background-color: #452854;
+        padding: 6px 10px;
+        border-radius: 50%;
+      }
+    }
+    img {
+      height: 33px;
+      cursor: pointer;
+    }
+  }
+
+  .accordionMenu {
+    .accordionItem {
+      div#title {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .accordionHeader {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #fff;
+        padding: 10px 0px;
+        cursor: pointer;
+        align-items: center;
+        .allGames {
+          color: #aaa;
+          font-size: 18px;
+          font-weight: normal;
+        }
+      }
+
+      .accordionBody {
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0px;
+          li {
+            font-weight: 500;
+            font-size: 14px;
+            color: #ffd85a;
+            text-align: left;
+            line-height: 30px;
+            a {
+              text-decoration: none;
+              color: #ffd85a;
+              font-size: 14px;
+              &:focus {
+                outline: none;
+              }
+            }
+            &:hover {
+              color: #aaa;
+            }
+          }
+        }
+      }
+    }
+
+    .simpleList,
+    .initList {
+      padding: 16px 0px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: left;
+      margin: 0px auto;
+
+      h5,
+      a {
+        font-size: 18px;
+        color: white;
+        margin: 0px;
+        font-weight: normal;
+        color: #aaa;
+        text-decoration: none;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: #aaa;
+      }
+    }
+    .initList {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.fixedHeader {
+  backdrop-filter: blur(100px);
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 18px 20px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 101;
+}
+
+.floatMain {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 9;
+  background: #000;
+  .freeCash {
+    background: linear-gradient(180deg, #7400aa 0, #3d0657 100%);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    p {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0px;
+      animation: blink 1s ease-in-out infinite forwards !important;
+    }
+  }
+  .floatBtn {
+    padding: 20px 16px;
+    background: #000;
+    max-width: 500px;
+    margin: 0px auto;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuIcon {
+  display: block;
+}
+
+@include media-breakpoint-mobile-port {
+  .menuIcon {
+    display: none;
+  }
+  .navbar {
+    .navItems {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.installMain {
+  padding: 35px 0px 65px 0px;
+  h6 {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #75ff93;
+    margin: 0px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(85.98deg, #ffe974 10.89%, #d06cff 91.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 40px;
+  }
+  p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 16px;
+    a {
+      color: #dbc07b !important;
+      cursor: pointer;
+    }
+  }
+  .stepTitle {
+    margin-bottom: 10px;
+  }
+  .installCard {
+    width: 100%;
+    padding: 35px 22px 45px 22px;
+    background: linear-gradient(82.46deg, #27003a 1.21%, #2a0143 97.93%);
+    border-radius: 36px;
+    img {
+      width: 100%;
+    }
+    .step {
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: left;
+        margin: 0px;
+        padding-bottom: 4px;
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 18px;
+        background: linear-gradient(84.56deg, #ffa370 12.23%, #ffdf6c 94.22%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: left;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .installSteps {
+    ol {
+      li {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 11px;
+        padding-bottom: 5px;
+        list-style-type: auto;
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+  p {
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .installMain {
+    h6 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    h3 {
+      font-size: 32px;
+      line-height: 39px;
+      padding: 10px 0px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 35px;
+    }
+    .stepTitle {
+      text-align: left;
+    }
+    .installSteps {
+      ol {
+        li {
+          font-size: 16px;
+          padding-bottom: 12px;
+        }
+      }
+    }
+    .installCard {
+      .step {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

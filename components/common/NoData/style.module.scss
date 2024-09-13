@@ -1,0 +1,43 @@
+.noDataComponent {
+  overflow: hidden;
+  .noDataImg {
+    width: 400px;
+    height: 400px;
+  }
+  .noDataHead {
+    width: 632px;
+    height: 96px;
+    border: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Peralta', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #393939;
+  }
+  @media screen and (min-width: 319px) and (max-width: 426px) {
+    .noDataHead {
+      width: 100%;
+      text-align: center;
+      font-size: 29px;
+      font-weight: 300;
+    }
+  }
+  @media screen and (min-width: 426px) and (max-width: 769px) {
+    .noDataHead {
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 300;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1025px) {
+    .noDataHead {
+      width: 632px;
+      text-align: center;
+      font-size: 58px;
+      font-weight: 300;
+    }
+  }
+}
