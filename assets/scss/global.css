@@ -187,3 +187,51 @@
     display: none;
   }
 }
+
+#custom-splash {
+  background-color: #0000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#custom-splash {
+  text-align: center;
+}
+
+#custom-splash img {
+  width: 200px;
+}
+
+.offline-message {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+.network-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8d7da;
+  text-align: center;
+  flex-direction: column;
+}
+
+.network-error h1 {
+  color: #721c24;
+  font-size: 24px;
+}
+
+.network-error p {
+  color: #721c24;
+  margin-top: 10px;
+}

@@ -1,1 +1,1 @@
-{"c":["webpack"],"r":[],"m":[]}
+{"c":["pages/_app","pages/home","webpack"],"r":["pages/404"],"m":["./node_modules/@react-aria/ssr/dist/SSRProvider.mjs","./node_modules/@react-aria/ssr/dist/import.mjs","./node_modules/@restart/ui/esm/ssr.js","./node_modules/react-bootstrap/esm/SSRProvider.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=D%3A%5Cflip%5Cwinbibo%20public%20new%5CWINBIBO-PUBLIC%5Cpages%5C404.jsx&page=%2F404!","./pages/404.jsx"]}

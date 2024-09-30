@@ -1,107 +1,71 @@
-/* eslint-disable react/no-danger */
-/**
- *   Library imports
- */
-import Head from 'next/head';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import NProgress from 'nprogress';
-import { ToastBar, Toaster } from 'react-hot-toast';
+import Head from 'next/head';
 import SSRProvider from 'react-bootstrap/SSRProvider';
-
-// SEO CONFIGS
 import { DefaultSeo } from 'next-seo';
 import SEO from 'next-seo.config';
-
-/**
- *   Custom component/function imports
- */
-import ErrorBoundary from '@/helpers/ErrorBoundary';
-
-/**
- *   Required styles import
- */
-
-import 'styles/nprogress.css';
-import 'assets/scss/vendor/notification.scss';
-import 'assets/scss/main.scss';
-
-NProgress.configure({ showSpinner: false });
+import 'assets/scss/main.scss'; // Your global styles
 
 const MyApp = ({ Component, pageProps }) => {
-  const Router = useRouter();
+  const [isOffline, setIsOffline] = useState(false); // State for network status
+  const [loading, setLoading] = useState(true); // State to handle splash screen
+  const router = useRouter();
 
-  /**
-   *   PAGE TRANSISTION
-   *   @description - While Page transition displaying loading bar
-   */
-
+  // Check network status
   useEffect(() => {
-    const handleStart = () => NProgress.start();
-    const handleComplete = () => NProgress.done();
-    //  (url !== router.asPath) --> for disabling transition for same path
+    const handleOnline = () => setIsOffline(false);
+    const handleOffline = () => setIsOffline(true);
 
-    Router.events.on('routeChangeStart', handleStart);
-    Router.events.on('routeChangeComplete', handleComplete);
-    Router.events.on('routeChangeError', handleComplete);
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
 
+    // Initial network check
+    if (!navigator.onLine) {
+      setIsOffline(true);
+    }
+
+    // Remove event listeners on cleanup
     return () => {
-      Router.events.off('routeChangeStart', handleStart);
-      Router.events.off('routeChangeComplete', handleComplete);
-      Router.events.off('routeChangeError', handleComplete);
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
     };
-  });
+  }, []);
+
+  // Simulate content loading after splash screen
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLoading(false); // Hide splash screen and load the app
+    }, 1500); // Adjust the delay to your actual load time
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="shortcut icon" href="/images/favicon.svg" />
-        <link rel="apple-touch-icon" href="/images/favicon.svg" />
-        <link rel="apple-touch-icon" href="/images/favicon.svg" />
-        <meta name="theme-color" content="#fff" />
-        <link rel="icon" href="/images/favicon.ico" />
-        <link
-          rel="preload"
-          fetchpriority="high"
-          as="image"
-          href="/images/svg/Home/home-device.webp"
-          type="image/webp"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
+
       <DefaultSeo {...SEO} />
-      <ErrorBoundary>
-        <SSRProvider>
+
+      <SSRProvider>
+        {loading ? (
+          <div id="custom-splash">
+            <img src="/images/logo-bg.png" alt="Winbibo Logo" />
+          </div>
+        ) : isOffline ? (
+          <div className="network-error">
+            <h1>Network not available</h1>
+            <p>Please check your internet connection and try again.</p>
+          </div>
+        ) : (
           <Component {...pageProps} />
-          <Toaster
-            position="bottom-right"
-            gutter={8}
-            reverseOrder
-            containerClassName="custom-toast"
-            containerStyle={{ right: '40px', bottom: '50px' }}
-          >
-            {(t) => (
-              <ToastBar toast={t} style={{ padding: 0, overflow: 'hidden' }}>
-                {({ icon, message }) => {
-                  return (
-                    <div
-                      className={`custom-toast-${t.type} d-flex align-items-center custom-toast-item`}
-                    >
-                      {icon}
-                      {message}
-                    </div>
-                  );
-                }}
-              </ToastBar>
-            )}
-          </Toaster>
-        </SSRProvider>
-      </ErrorBoundary>
+        )}
+      </SSRProvider>
     </>
   );
 };

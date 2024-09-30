@@ -2,10 +2,27 @@
     "theme_color": "#fdd10e",
     "background_color": "#fff",
     "display": "standalone",
-     "orientation": "portrait",
+    "orientation": "portrait",
     "start_url": "/home",
-    "name": "Next basev2 with PWA",
-    "short_name": "Next PWA",
-    "description": "Nextjs base setup with prettier and PWA configuration",
-    "prefer_related_applications": true
+    "name": "Winbibo",
+    "short_name": "Winbibo",
+    "description": "Winbibo is your platform to play real money games, fantasy sports, and more. Join now to experience safe and exciting online gaming!",
+    "icons": [
+        {
+            "src": "/my-logo-192x192.svg",  
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/my-logo-512x512.svg",  
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/my-logo-384x384.svg", 
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "prefer_related_applications": false
 }
