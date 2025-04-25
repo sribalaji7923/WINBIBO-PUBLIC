@@ -194,10 +194,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #custom-splash {
   text-align: center;
+}
+#custom-splash .spinner-grow {
+    position: absolute;
+    top: 39%;
 }
 
 #custom-splash img {

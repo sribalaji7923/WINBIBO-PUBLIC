@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
+import { useEffect, useState } from 'react'; 
 import SSRProvider from 'react-bootstrap/SSRProvider';
 import { DefaultSeo } from 'next-seo';
 import SEO from 'next-seo.config';
-import 'assets/scss/main.scss'; // Your global styles
+import 'assets/scss/main.scss';  
+import Spinner from 'react-bootstrap/Spinner';  
+
 
 const MyApp = ({ Component, pageProps }) => {
   const [isOffline, setIsOffline] = useState(false); // State for network status
-  const [loading, setLoading] = useState(true); // State to handle splash screen
-  const router = useRouter();
+  const [loading, setLoading] = useState(true); // State to handle splash screen 
 
   // Check network status
   useEffect(() => {
@@ -41,20 +40,12 @@ const MyApp = ({ Component, pageProps }) => {
   }, []);
 
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
-
+    <> 
       <DefaultSeo {...SEO} />
-
       <SSRProvider>
         {loading ? (
           <div id="custom-splash">
+            <Spinner animation="grow" variant="dark" />
             <img src="/images/logo-bg.png" alt="Winbibo Logo" />
           </div>
         ) : isOffline ? (

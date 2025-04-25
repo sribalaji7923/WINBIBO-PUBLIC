@@ -9,7 +9,7 @@ const generalAccount = [
   {
     question: 'What is Winbibo and how does it work?',
     answer:
-      'Winbibo is a skill-based gaming platform where you can compete in exciting games like Balloon Pop, 2048, and fantasy cricket. Use your skills to play against real players and win rewards.',
+      'Winbibo is a skill-based gaming platform where you can compete in exciting games like Rock Paper Scissors, 2048, and fantasy cricket. Use your skills to play against real players and win rewards.',
   },
   {
     question: 'I am under 18 years old. Can I play on Winbibo?',
@@ -19,7 +19,7 @@ const generalAccount = [
   {
     question: 'What games are offered and how do I play them?',
     answer:
-      'Winbibo currently offers games like Balloon Pop, 2048, and fantasy cricket. Stay tuned for more exciting games coming soon! You can find the game rules in each game’s FAQ section.',
+      'Winbibo currently offers games like Rock Paper Scissors, 2048, and fantasy cricket. Stay tuned for more exciting games coming soon! You can find the game rules in each game’s FAQ section.',
   },
   {
     question: 'How do I download and install the app?',

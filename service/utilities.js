@@ -8,6 +8,10 @@ export const axiosInstance = axios.create({
 
 export const cancelTokenSource = axios.CancelToken.source();
 
+export const handleRedirectGameScreen = () => {
+  window.location.href = config.redirectPwaApp;
+};
+
 export const logout = () => {
   localStorage.clear();
   window.location.href = '/';

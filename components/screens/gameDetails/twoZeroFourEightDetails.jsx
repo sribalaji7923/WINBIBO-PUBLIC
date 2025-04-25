@@ -31,7 +31,7 @@ export const TwoZeroFourEightDetails = () => {
       </div>
       <div style={{ padding: '0px 20px' }}>
         <div className={classes.detailsMobile}>
-          <MobileBanner title="India's Trusted Real Cash Balloon Game Online" />
+          <MobileBanner title="India's Trusted Real Cash Rock Paper Scissors Game Online" />
         </div>
         <div className={classes.detailsDesktop}>
           <DesktopBanner />

@@ -2,7 +2,7 @@ export const faqHomeData = [
   {
     question: 'Where can I play skill-based games?',
     answer:
-      'Our platform offers a wide variety of skill-based games like Balloon Pop, 2048, and fantasy cricket. Download the app now to compete with real players and enjoy exciting rewards.',
+      'Our platform offers a wide variety of skill-based games like Rock Paper Scissors, 2048, and fantasy cricket. Play now to compete with real players and enjoy exciting rewards.',
   },
   {
     question: 'Is it safe to play on your app?',
@@ -124,11 +124,12 @@ export const faqHomeData = [
   },
 ];
 
-export const aboutGameBallonPop = {
-  title: 'About Balloon Pop',
+export const aboutGameRockPaperScissors = {
+  title: 'About Rock Paper Scissors',
   subTitle: 'Fast and Fun Gameplay',
-  body: 'Balloon Pop is a fast-paced, exciting game where two players compete to pop balloons and score points. With simple rules and thrilling gameplay, anyone can enjoy this fun challenge. Your goal is to outscore your opponent by popping the right balloons within 45 seconds. Be cautious—popping a red balloon deducts points, while green and yellow balloons boost your score. Download Balloon Pop now and see if you can pop your way to victory!',
+  body: 'Rock Paper Scissors is a fast-paced, exciting game where two players go head-to-head in a classic battle of wits. Each round, both players simultaneously pick Rock, Paper, or Scissors—Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock. Your goal is to outscore your opponent by winning as many rounds as you can within 45 seconds. Play now to challenge real players and prove your skills!',
 };
+
 
 export const aboutGameFantasyCricket = {
   title: 'About Winbibo Opinio – Fantasy Cricket',
@@ -142,11 +143,12 @@ export const aboutGame2048 = {
   body: '2048 is the perfect mix of strategy and speed. In this classic number-puzzle game, you race against the clock and your opponent to score the highest. Move tiles, combine numbers, and reach 2048—all in just 45 seconds. The player with the highest score at the end wins! Think fast, plan your moves, and take on the challenge. Download 2048 on Winbibo and start winning!',
 };
 
-export const freeStyleBallonPop = {
-  title: 'Balloon Pop – Free Casual Game',
+export const freeStyleRockPaperScissors = {
+  title: 'Rock Paper Scissors – Free Casual Game',
   subTitle: 'Play and Win for Free',
-  body: 'Love casual games? Everyone’s playing Balloon Pop and loving the  excitement. Compete in this dynamic balloon-popping challenge, where your reflexes and timing are key to winning. The best part? It’s completely FREE! Pop green and yellow balloons to boost your score, avoid red ones, and climb to the top of theleaderboard. Download Balloon Pop today and start winning without any upfront investment!',
+  body: 'Love casual games? Everyone’s playing Rock Paper Scissors and enjoying the excitement. Compete in this dynamic best-of-rounds showdown, where quick thinking and strategy are key to victory. The best part? It’s completely FREE! Choose Rock, Paper, or Scissors each round to outsmart your opponent, avoid losing moves, and climb to the top of the leaderboard. Play now and start winning without any upfront investment!',
 };
+
 
 export const freeStyleFantasyCricket = {
   title: 'Fantasy Cricket – Free to Play',
@@ -160,28 +162,29 @@ export const freeStyle2048 = {
   body: 'Love puzzles? 2048 is for you! Compete against other real players and see who can score higher within the 45-second limit. The rules are simple, but the challenge is real. Best of all, it’s completely free to play. Download 2048 now and test your puzzle-solving skills in this fast-paced version of the classic game!',
 };
 
-export const playGamesBalloonPop = {
-  title: 'How to Play Balloon Pop',
-  subTitle: 'Pop Balloons, Score, and Win',
-  body: ' Playing Balloon Pop is simple and fun, but winning requires quick reflexes and smart strategy. Here’s how you play:',
+export const playGamesRockPaperScissors = {
+  title: 'How to Play Rock Paper Scissors',
+  subTitle: 'Choose, Score, and Win',
+  body: 'Playing Rock Paper Scissors is simple and fun, but winning requires quick thinking and smart strategy. Here’s how you play:',
   steps: [
     {
-      step: 'The game presents you with three different balloons: Red, Green, and Yellow.',
+      step: 'Each round, both players choose Rock, Paper, or Scissors simultaneously.',
     },
     {
-      step: 'Pop the Green balloons to earn +3 points, Yellow for +1 point, and avoid the Red balloons, which deduct -5 points.',
+      step: 'Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock.',
     },
     {
-      step: 'Both you and your opponent have 45 seconds to pop as many balloons as possible.',
+      step: 'Both you and your opponent have 45 seconds to play as many rounds as possible.',
     },
     {
-      step: 'The player with the highest score at the end of the game wins and earns exciting rewards!',
+      step: 'The player who wins the most rounds at the end of the time wins exciting rewards!',
     },
     {
-      step: ' Download Balloon Pop now and start popping your way to victory!',
+      step: 'Play now and start proving your skills against real players!',
     },
   ],
 };
+
 
 export const playGamesFantasyCricket = {
   title: 'How to Play Fantasy Cricket',
@@ -240,38 +243,38 @@ export const playGames2048 = {
   ],
 };
 
-export const whyPlayGamesBalloonPop = {
-  title: 'Why Play Balloon Pop?',
+export const whyPlayGamesRockPaperScissors = {
+  title: 'Why Play Rock Paper Scissors?',
   subTitle: 'Fun, Real Players, Real Rewards',
-  body: 'There are plenty of reasons why Balloon Pop is the go-to game for casual players. Here’s why you should join the fun:',
+  body: 'There are plenty of reasons why Rock Paper Scissors is the go-to game for casual players. Here’s why you should join the fun:',
   steps: [
     {
-      stepHead: 'Play Balloon Pop online:',
-      step: 'Experience fast-paced balloon-popping action in a competitive online format.',
+      stepHead: 'Play Rock Paper Scissors online:',
+      step: 'Experience fast-paced Rock Paper Scissors action in a competitive online format.',
     },
     {
       stepHead: 'Free to Play:',
-      step: 'Play Balloon Pop without any upfront investment—it’s absolutely free!',
+      step: 'Play Rock Paper Scissors without any upfront investment—it’s absolutely free!',
     },
     {
       stepHead: 'Win rewards:',
-      step: 'Use your reflexes and strategy to earn exciting rewards by outpacing your opponents.',
+      step: 'Use your strategy and quick reflexes to earn exciting rewards by outsmarting your opponents.',
     },
     {
       stepHead: 'Real Players:',
-      step: 'Compete against real players—no  bots, just pure competition.',
+      step: 'Compete against real players—no bots, just pure competition.',
     },
     {
       stepHead: 'Instant Rewards:',
-      step: 'Win games and get your rewards credited instantly to your Winbibo wallet.',
+      step: 'Win rounds and get your rewards credited instantly to your Winbibo wallet.',
     },
     {
       stepHead: 'More Games:',
-      step: 'Beyond Balloon Pop, explore games like 2048 and Fantasy Cricket on the same platform.',
+      step: 'Beyond Rock Paper Scissors, explore games like 2048 and Fantasy Cricket on the same platform.',
     },
     {
       stepHead: 'Daily Rewards:',
-      step: 'Enjoy two free entries into  games every day and win rewards without spending a dime.',
+      step: 'Enjoy two free entries into games every day and win rewards without spending a dime.',
     },
     {
       stepHead: '24/7 Customer Support:',
@@ -283,6 +286,7 @@ export const whyPlayGamesBalloonPop = {
     },
   ],
 };
+
 
 export const whyPlayGamesFantasyCricket = {
   title: 'Why Play Fantasy Cricket?',
@@ -321,8 +325,8 @@ export const whyPlayGamesFantasyCricket = {
 };
 
 export const whyPlayGames2048 = {
-  title: ' Why Play 2048 on Winbibo?',
-  subTitle: ' Real Players, Real Rewards',
+  title: 'Why Play 2048 on Winbibo?',
+  subTitle: 'Real Players, Real Rewards',
   body: '2048 on Winbibo isn’t just about fun; it’s about winning! Here’s why you should join the action:',
   steps: [
     {
@@ -351,30 +355,33 @@ export const whyPlayGames2048 = {
     },
     {
       stepHead: 'More Games to Explore:',
-      step: ' Explore other games like Balloon Pop and Fantasy Cricket on Winbibo.',
+      step: 'Explore other games like Rock Paper Scissors and Fantasy Cricket on Winbibo.',
     },
   ],
 };
 
-export const commonTermsBalloonPop = {
+export const commonTermsRockPaperScissors = {
   title: 'Common terms used in',
-  subTitle: 'Balloon Pop',
-  body: 'Familiarize yourself with these common Balloon Pop terms to help you score higher and win more games.',
+  subTitle: 'Rock Paper Scissors',
+  body: 'Familiarize yourself with these common Rock Paper Scissors terms to help you win more games.',
   steps: [
     {
-      step: 'Red Balloon: Popping this balloon deducts 5 points from your score.',
+      step: 'Rock: Beats Scissors.',
     },
     {
-      step: 'Green Balloon: Popping this balloon adds 3 points to your score.',
+      step: 'Paper: Beats Rock.',
     },
     {
-      step: 'Yellow Balloon: Popping this balloon adds 1 point to your score.',
+      step: 'Scissors: Beats Paper.',
     },
     {
-      step: 'Time Limit: Each game lasts for 45 seconds.',
+      step: 'Round: A single throw by both players determines the winner of that round.',
     },
     {
-      step: 'Score: The player with the highest score at the end of the game wins.',
+      step: 'Time Limit: Each match lasts for 45 seconds of play.',
+    },
+    {
+      step: 'Score: The player who wins the most rounds within the time limit wins the match.',
     },
   ],
 };
@@ -402,58 +409,63 @@ export const commonTermsFantasyCricket = {
   ],
 };
 
-export const tipsTricksBalloonPop = {
+export const tipsTricksRockPaperScissors = {
   title: 'Tips & Tricks',
-  subTitle: 'to win Balloon Pop',
-  body: 'Use these tips & tricks to pop more balloons, score higher, and win the game.',
+  subTitle: 'to win Rock Paper Scissors',
+  body: 'Use these tips & tricks to outsmart your opponent, win more rounds, and climb the leaderboard.',
   steps: [
     {
-      step: 'Prioritize Green Balloons: Focus on popping green balloons to maximize points.',
+      step: 'Stay unpredictable: Vary between Rock, Paper, and Scissors—avoid falling into patterns.',
     },
     {
-      step: 'Avoid Red Balloons: Red balloons will reduce your score, so avoid them.',
+      step: 'Watch for patterns: Pay attention to your opponent’s previous moves and anticipate their next choice.',
     },
     {
-      step: 'Quick Reflexes: Stay alert and pop the balloons as soon as they appear.',
+      step: 'React quickly: The faster you select, the less time your opponent has to counter your move.',
     },
     {
-      step: 'Time Management: Make sure to pop as many balloons as you can within the 45-second limit.',
+      step: 'Switch strategy: If one move isn’t working, change up your choices to keep your opponent guessing.',
+    },
+    {
+      step: 'Use psychological tactics: A quick feint or hesitation can throw off your opponent’s timing.',
     },
   ],
 };
 
-export const balloonGameFaq = [
+
+export const rockPaperScissorsFaq = [
   {
-    question: 'How do I play Balloon Pop?',
+    question: 'How do I play Rock Paper Scissors?',
     answer:
-      'In Balloon Pop, players have 45 seconds to pop balloons of different colors. Green balloons give +3 points, yellow balloons give +1 point, and red balloons deduct -5 points. The player with the highest score at the end of the game wins.',
+      'In Rock Paper Scissors, players have 45 seconds to play as many rounds as possible. Each round, both players choose Rock, Paper, or Scissors simultaneously. Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock. The player who wins the most rounds within the time limit wins.',
   },
   {
-    question: 'What is Balloon Pop?',
+    question: 'What is Rock Paper Scissors?',
     answer:
-      'Balloon Pop is an exciting multiplayer game where two players compete to pop the right balloons within a limited time frame. The goal is to score higher by strategically popping balloons.',
+      'Rock Paper Scissors is an exciting multiplayer game where two players compete in quick rounds by choosing Rock, Paper, or Scissors. The goal is to outsmart your opponent and win as many rounds as possible within the time limit.',
   },
   {
-    question: 'How many players can play Balloon Pop?',
+    question: 'How many players can play Rock Paper Scissors?',
     answer:
-      'Balloon Pop is a two-player game where you compete head-to-head with another player to see who can score the most points within 45 seconds.',
+      'Rock Paper Scissors is a two-player game played head-to-head to see who can win the most rounds within 45 seconds.',
   },
   {
-    question: 'Is Balloon Pop free to play?',
+    question: 'Is Rock Paper Scissors free to play?',
     answer:
-      'Yes, Balloon Pop is completely free to play. You can participate in games without any upfront investment and still win exciting rewards.',
+      'Yes, Rock Paper Scissors is completely free to play. You can participate without any upfront investment and still win exciting rewards.',
   },
   {
-    question: 'What are the rules of Balloon Pop?',
+    question: 'What are the rules of Rock Paper Scissors?',
     answer:
-      'The rules are simple: pop green balloons for +3 points, yellow balloons for +1 point, and avoid red balloons that deduct -5 points. The player with the highest score at the end of 45 seconds wins.',
+      'The rules are simple: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock. Play as many rounds as you can within 45 seconds, and the player with the most round wins is the overall winner.',
   },
   {
-    question: 'How can I win in Balloon Pop?',
+    question: 'How can I win in Rock Paper Scissors?',
     answer:
-      'To win, focus on popping green and yellow balloons to maximize your score while avoiding red balloons. Quick reflexes and smart timing will help you outscore your opponent.',
+      'To win, anticipate your opponent’s choices, vary your own selections, and react quickly. The player who wins the most rounds within the time limit wins the match.',
   },
 ];
+
 
 export const tipsTricksFantasyCricket = {
   title: 'Tips & Tricks',

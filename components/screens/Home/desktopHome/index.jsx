@@ -11,7 +11,7 @@ export const DesktopHome = () => {
       <Certificates />
       <InstandWithdraw />
       <SkillGames />
-      <HowToInstall />
+      {/* <HowToInstall /> */}
       <ReasonToPlay />
       <FaqCommon
         faqData={faqHomeData}

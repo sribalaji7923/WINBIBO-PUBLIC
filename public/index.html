@@ -1,93 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Preconnect to Google Fonts (if needed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Preconnect to Google Fonts if used -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
 
-  <!-- Manifest and Icons -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-  <!-- Apple Touch Icon for iOS Home Screen -->
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
-
-
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#fff" />
-
-  <!-- SEO Metadata -->
-  <meta name="title" content="Winbibo - Play real money winning games | Online fantasy sports and more" />
-  <meta name="description"
-    content="Winbibo is your platform to play real money games, fantasy sports, and more! Join now to experience safe and exciting online gaming." />
-  <link rel="canonical" href="http://128.199.17.56:2265/home" />
-
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Winbibo - Play real money winning games | Online fantasy sports and more" />
-  <meta property="og:description"
-    content="Winbibo offers thrilling online games where you can win real money, including fantasy cricket and more. Join today!" />
-  <meta property="og:url" content="http://128.199.17.56:2265/home" />
-  <meta property="og:image" content="%PUBLIC_URL%/logo.png" />
-
-  <!-- Twitter Cards Metadata -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Winbibo - Play real money winning games | Online fantasy sports and more" />
-  <meta name="twitter:description" content="Winbibo offers online fantasy games and real-money gaming experiences!" />
-  <meta name="twitter:image" content="%PUBLIC_URL%/logo.png" />
-
-  <title>Winbibo - Play real money winning games | Online fantasy sports and more</title>
-
-  <!-- Preload important assets -->
-  <link rel="preload" href="%PUBLIC_URL%/logo.svg" as="image" />
-
-  <style>
-    /* Loader Styles */
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 500px;
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: red;
-      z-index: 9999;
-    }
-
-    #preloader img {
-      width: 150px;
-    }
-
-    #root {
-      display: none;
-    }
-  </style>
-</head>
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-
-  <!-- Preloader with Winbibo logo -->
-  <div id="preloader">
-    <img src="%PUBLIC_URL%/logo.svg" alt="Winbibo Logo" />
-  </div>
-
-  <!-- Main App Root -->
-  <div id="root"></div>
-
-  <!-- Script to hide preloader after app loads -->
-  <script>
-    window.addEventListener('load', function () {
-      document.getElementById('preloader').style.display = 'none';
-      document.getElementById('root').style.display = 'block';
-    });
-  </script>
-</body>
-
+    <title>Winbibo – Play real money winning games</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>

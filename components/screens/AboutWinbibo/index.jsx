@@ -29,9 +29,9 @@ const AboutWinbibo = () => {
                   in India, specializing in skill-based casual games. We aim to
                   bring joy and entertainment to players by offering engaging
                   and competitive games that challenge their skills and
-                  strategies. Our games, like Balloon Pop, 2048, and fantasy
-                  cricket, allow players to immerse themselves in fun, rewarding
-                  experiences while competing with real players.
+                  strategies. Our games, like Rock Paper Scissors, 2048, and
+                  fantasy cricket, allow players to immerse themselves in fun,
+                  rewarding experiences while competing with real players.
                 </p>
               </div>
             </div>

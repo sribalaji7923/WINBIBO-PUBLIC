@@ -1,24 +1,7 @@
-import React from 'react';
+import { DynamicIcon } from 'lucide-react/dynamic';
 
-const Icon = ({
-  iconName,
-  iconColor = '#fff',
-  fontSize = '20px',
-  cursor = 'pointer',
-  className = '',
-  ...props
-}) => {
-  return (
-    <i
-      {...props}
-      className={`fas fa-${iconName} ${className}`}
-      style={{
-        fontSize,
-        cursor,
-        color: iconColor,
-      }}
-    />
-  );
+const Icon = ({ iconName, size = 20, color = '#fff', ...props }) => {
+  return <DynamicIcon {...props} name={iconName} color={color} size={size} />;
 };
 
 export default Icon;

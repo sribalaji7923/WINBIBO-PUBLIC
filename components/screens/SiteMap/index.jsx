@@ -10,7 +10,7 @@ const SiteMap = () => {
         <h6>Main Pages</h6>
         <ul>
           <li>
-            <Link href="/home">Winbibo</Link>
+            <Link href="/">Winbibo</Link>
           </li>
           <li>
             <Link href="/about-winbibo">About Us</Link>
@@ -39,7 +39,7 @@ const SiteMap = () => {
         <h6>Casual Games</h6>
         <ul>
           <li>
-            <Link href="/casual-games/balloon-pop">Ballon Pop</Link>
+            <Link href="/casual-games/rps">Rock Paper Scissors</Link>
           </li>
           <li>
             <Link href="/casual-games/2048">2048</Link>

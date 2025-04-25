@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import { handleRedirectGameScreen } from '@/service/utilities';
 
 export const MobileBanner = ({
   aboutUs = false,
@@ -99,11 +100,11 @@ export const MobileBanner = ({
               </Swiper>
             </div>
             <div className="downBtn" style={{ marginTop: '85px' }}>
-              <button>
-                <span>
+              <button onClick={handleRedirectGameScreen}>
+                {/* <span>
                   <img src="/images/home/download_icon.png" alt="download" />
-                </span>
-                Download & Get 10 Free Cash
+                </span> */}
+                Play Now & Get 10 Free Cash
               </button>
             </div>
             <div className={classes.instantWithdraw}>

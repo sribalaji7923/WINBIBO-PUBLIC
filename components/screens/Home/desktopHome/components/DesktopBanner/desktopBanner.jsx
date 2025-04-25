@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './desktopBanner.module.scss';
+import { handleRedirectGameScreen } from '@/service/utilities';
 
 export const DesktopBanner = ({ aboutUs = false }) => {
   return (
@@ -23,11 +24,11 @@ export const DesktopBanner = ({ aboutUs = false }) => {
               )}
 
               <div className={`${classes.btn} downBtn`}>
-                <button>
-                  <span>
+                <button onClick={handleRedirectGameScreen}>
+                  {/* <span>
                     <img src="/images/home/download_icon.png" alt="download" />
-                  </span>
-                  Download & Get 10 Free Cash
+                  </span> */}
+                  Play Now & Get 10 Free Cash
                 </button>
               </div>
             </div>

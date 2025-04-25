@@ -1,18 +1,21 @@
 const config = {
   development: {
     baseUrl: 'http://128.199.17.56:2265',
+    redirectPwaApp: 'http://143.110.184.204:8000/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
   staging: {
     baseUrl: 'http://128.199.17.56:2265',
+    redirectPwaApp: 'http://143.110.184.204:8000/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
   production: {
     baseUrl: 'http://128.199.17.56:2265',
+    redirectPwaApp: 'http://143.110.184.204:8000/login',
     api: {
       baseUrl: 'api-baseurl',
     },

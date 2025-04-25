@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import classes from './header.module.scss';
-import Icon from '@/service/icon';
+import Icon from '@/service/icon'; 
+import { handleRedirectGameScreen } from '@/service/utilities';
 
 export const Header = ({ isFloat = false }) => {
   const [show, setShow] = useState(false);
@@ -58,6 +59,8 @@ export const Header = ({ isFloat = false }) => {
     };
   }, [isFloat]);
 
+
+
   return (
     <div>
       <header
@@ -66,7 +69,7 @@ export const Header = ({ isFloat = false }) => {
         <div className="container">
           <div className={classes.navbar}>
             <div className={classes.logo}>
-              <Link href="/home">
+              <Link href="/">
                 <img src="/images/logo_black.svg" alt="Logo" />
               </Link>
             </div>
@@ -111,8 +114,8 @@ export const Header = ({ isFloat = false }) => {
                       <div className={classes.accordionBodyDesktop}>
                         <ul>
                           <li>
-                            <Link href="/casual-games/balloon-pop">
-                              Balloon Pop
+                            <Link href="/casual-games/rps">
+                              Rock Paper Scissors
                             </Link>{' '}
                           </li>
                           <li>
@@ -156,7 +159,11 @@ export const Header = ({ isFloat = false }) => {
           <div className={`${classes.offcanvas} ${show ? classes.show : ''}`}>
             <div className={classes.offBody}>
               <div className={classes.closeIcon}>
-                <Icon iconName="close" fontSize="18px" onClick={handleClose} />
+                <Icon
+                  iconName="circle-x"
+                  fontSize="22px"
+                  onClick={handleClose}
+                />
               </div>
               <div className={classes.accordionMenu}>
                 <div className={`${classes.accordionItem} ${classes.initList}`}>
@@ -190,8 +197,8 @@ export const Header = ({ isFloat = false }) => {
                           <div className={classes.accordionBody}>
                             <ul>
                               <li>
-                                <Link href="/casual-games/balloon-pop">
-                                  Balloon Pop
+                                <Link href="/casual-games/rps">
+                                  Rock Paper Scissors
                                 </Link>{' '}
                               </li>
                               <li>
@@ -255,12 +262,7 @@ export const Header = ({ isFloat = false }) => {
           </div>
           <div className={classes.floatBtn}>
             <div className="downBtn">
-              <button>
-                <span>
-                  <img src="/images/home/download_icon.png" alt="download" />
-                </span>
-                Download Winbibo
-              </button>
+              <button onClick={handleRedirectGameScreen}>Play Now</button>
             </div>
           </div>
         </div>

@@ -10,8 +10,8 @@ export const SkillGames = () => {
           Skill Based Games &amp; <br /> Fantasy Sports
         </h2>
         <p>
-          Download the app and enjoy competitive games like Balloon Pop, 2048,
-          and fantasy cricket. Compete, strategize, and win exciting rewards.{' '}
+          Download the app and enjoy competitive games like Rock Paper Scissors, 2048, and fantasy cricket. Compete, strategize, and win exciting
+          rewards.{' '}
         </p>
         <div className={classes.skillImages}>
           <div className="row">

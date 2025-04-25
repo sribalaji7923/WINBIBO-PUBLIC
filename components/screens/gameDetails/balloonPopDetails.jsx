@@ -14,13 +14,13 @@ import { Footer } from '../Footer';
 import { DesktopBanner } from '../Home/desktopHome/components';
 import classes from './gameDetails.module.scss';
 import {
-  aboutGameBallonPop,
-  freeStyleBallonPop,
-  playGamesBalloonPop,
-  whyPlayGamesBalloonPop,
-  commonTermsBalloonPop,
-  tipsTricksBalloonPop,
-  balloonGameFaq,
+  aboutGameRockPaperScissors,
+  freeStyleRockPaperScissors,
+  playGamesRockPaperScissors,
+  whyPlayGamesRockPaperScissors,
+  commonTermsRockPaperScissors,
+  tipsTricksRockPaperScissors,
+  rockPaperScissorsFaq,
 } from '@/service/constant';
 
 export const BalloonPopDetails = () => {
@@ -31,22 +31,22 @@ export const BalloonPopDetails = () => {
       </div>
       <div style={{ padding: '0px 20px' }}>
         <div className={classes.detailsMobile}>
-          <MobileBanner title="India's Trusted Real Cash Balloon Game Online" />
+          <MobileBanner title="India's Trusted Real Cash Rock Paper Scissors Game Online" />
         </div>
         <div className={classes.detailsDesktop}>
           <DesktopBanner />
         </div>
-        <AboutGame aboutGame={aboutGameBallonPop} />
-        <FreeStyle freeStyle={freeStyleBallonPop} />
+        <AboutGame aboutGame={aboutGameRockPaperScissors} />
+        <FreeStyle freeStyle={freeStyleRockPaperScissors} />
         <DownloadGames />
         <HowToInstall />
-        <PlayGame playGames={playGamesBalloonPop} />
-        <WhyPlay whyPlayGames={whyPlayGamesBalloonPop} />
-        <CommmonTerms commonTerm={commonTermsBalloonPop} />
-        <CommmonTerms commonTerm={tipsTricksBalloonPop} />
+        <PlayGame playGames={playGamesRockPaperScissors} />
+        <WhyPlay whyPlayGames={whyPlayGamesRockPaperScissors} />
+        <CommmonTerms commonTerm={commonTermsRockPaperScissors} />
+        <CommmonTerms commonTerm={tipsTricksRockPaperScissors} />
         <SkillGames />
         <FaqCommon
-          faqData={balloonGameFaq}
+          faqData={rockPaperScissorsFaq}
           title="MORE QUESTIONS?"
           subtitle="Here are our FAQ’s"
         />

@@ -35,15 +35,15 @@ const PrivacyComponent = () => {
           <h2>i. Our Business & Policy Applicability</h2>
           <p>
             Winbibo Games operates platforms that offer skill-based games, such
-            as Balloon Pop, 2048, and fantasy cricket. By accessing our
-            Platform, users (hereinafter referred to as <span>“Users/You”</span>
-            ) can engage in various online skill games. To use our Services, you
-            must be at least 18 years old and reside in a region where such
-            games are legally permissible. We do not knowingly collect any
-            Personal Information from minors. If such information is
-            inadvertently provided, we will promptly delete it. If you are aware
-            of a minor providing personal information, please contact our
-            support team at{' '}
+            as Rock Paper Scissors, 2048, and fantasy cricket. By accessing
+            our Platform, users (hereinafter referred to as{' '}
+            <span>“Users/You”</span>) can engage in various online skill games.
+            To use our Services, you must be at least 18 years old and reside in
+            a region where such games are legally permissible. We do not
+            knowingly collect any Personal Information from minors. If such
+            information is inadvertently provided, we will promptly delete it.
+            If you are aware of a minor providing personal information, please
+            contact our support team at{' '}
             <a href="mailto:support@winbibo.com">support@winbibo.com</a>.
           </p>
           <p>

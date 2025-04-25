@@ -19,7 +19,7 @@ export const HowToInstall = () => {
         <h3>Install Winbibo App</h3>
         <p>
           Follow the steps below to install the app and start playing exciting
-          skill-based games like Balloon Pop, 2048, and fantasy cricket.
+          skill-based games like Rock Paper Scissors, 2048, and fantasy cricket.
           {!showSteps && (
             <a onClick={handleMoreClick} style={{ cursor: 'pointer' }}>
               ...more

@@ -36,7 +36,7 @@ export const Footer = ({ isFloat = false }) => {
             <div className={classes.list}>
               <ul>
                 <li className={classes.title}>Casual Games</li>
-                <li>Ballon Pop</li>
+                <li>Rock Paper Scissors</li>
                 <li>2048</li>
               </ul>
             </div>

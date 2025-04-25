@@ -8,12 +8,12 @@ const DownloadGames = () => {
         <div className="row">
           <div class="col-12 ">
             <div className={classes.aboutContent}>
-              <h6>How to Download Balloon Pop</h6>
+              <h6>How to Download Rock Paper Scissors</h6>
               <h3>Quick Steps for Android & iOS</h3>
               <p>
-                Balloon Pop, the most thrilling balloon-popping game, is
-                available on both Android and iOS devices. Here’s how to get
-                started:
+                Rock Paper Scissors, the most thrilling Rock Paper Scissors
+                game, is available on both Android and iOS devices. Here’s how
+                to get started:
               </p>
             </div>
           </div>
@@ -33,7 +33,7 @@ const DownloadGames = () => {
                   <li>Follow the on-screen instructions to install the app.</li>
                   <li>
                     Once installed, open the app, sign up, and start playing
-                    Balloon Pop.
+                    Rock Paper Scissors.
                   </li>
                 </ul>
               </div>
@@ -55,7 +55,7 @@ const DownloadGames = () => {
                   </li>
                   <li>Select "Add to Home Screen".</li>
                   <li>
-                    Open the app, sign up, and start your balloon-popping
+                    Open the app, sign up, and start your Rock Paper Scissors
                     adventure!
                   </li>
                 </ul>
