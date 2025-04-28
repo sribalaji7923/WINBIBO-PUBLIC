@@ -35,7 +35,7 @@ export const DesktopBanner = ({ aboutUs = false }) => {
           </div>
           <div className="col-6">
             <div className={classes.bannerImage}>
-              <img src="/images/home/desktop_banner.png" alt="banner1" />
+              <img src="/images/about-us.png" alt="banner1" />
             </div>
           </div>
         </div>

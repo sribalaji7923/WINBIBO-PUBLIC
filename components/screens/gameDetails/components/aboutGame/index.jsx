@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './aboutGame.module.scss';
 
-const AboutGame = ({ aboutGame }) => {
+const AboutGame = ({ aboutGame, isKey }) => {
   const { title, subTitle, body } = aboutGame;
   return (
     <div className="container">
@@ -9,7 +9,11 @@ const AboutGame = ({ aboutGame }) => {
         <div className="row">
           <div class="col-12">
             <div className={classes.aboutBanner}>
-              <img src="/images/about_balloon.png" alt="about-banner" />
+              {isKey === 1 ? (
+                <img src="/images/skill/rps_game_v2.png" alt="about-banner" />
+              ) : (
+                <img src="/images/2048.svg" alt="about-banner" />
+              )}
             </div>
           </div>
           <div class="col-12">

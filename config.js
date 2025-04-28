@@ -1,28 +1,28 @@
 const config = {
   development: {
-    baseUrl: 'http://128.199.17.56:2265',
-    redirectPwaApp: 'http://143.110.184.204:8000/login',
+    baseUrl: 'http://winbibo.com',
+    redirectPwaApp: 'https://games.winbibo.com/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
   staging: {
-    baseUrl: 'http://128.199.17.56:2265',
-    redirectPwaApp: 'http://143.110.184.204:8000/login',
+    baseUrl: 'http://winbibo.com',
+    redirectPwaApp: 'https://games.winbibo.com/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
   production: {
-    baseUrl: 'http://128.199.17.56:2265',
-    redirectPwaApp: 'http://143.110.184.204:8000/login',
+    baseUrl: 'http://winbibo.com',
+    redirectPwaApp: 'https://games.winbibo.com/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
 };
 
-export const baseURL = 'http://128.199.17.56:2265';
+export const baseURL = 'http://winbibo.com';
 export const endpoints = {
   GET_ALL_BLOGS: `${baseURL}/getBlog`,
   GET_ALL_SUCCESS_STORIES: `${baseURL}/getSuccessStories`,

@@ -36,14 +36,14 @@ export const TwoZeroFourEightDetails = () => {
         <div className={classes.detailsDesktop}>
           <DesktopBanner />
         </div>{' '}
-        <AboutGame aboutGame={aboutGame2048} />
+        <AboutGame aboutGame={aboutGame2048} isKey={2} />
         <FreeStyle freeStyle={freeStyle2048} />
         <DownloadGames />
         <div style={{ paddingBottom: '30px' }}>
           <HowToInstall />
         </div>
         <PlayGame playGames={playGames2048} />
-        <WhyPlay whyPlayGames={whyPlayGames2048} />
+        <WhyPlay whyPlayGames={whyPlayGames2048} isKey={2} />
         <CommmonTerms commonTerm={commonTerms2048} />
         <CommmonTerms commonTerm={tipsTricks2048} />
         <FaqCommon

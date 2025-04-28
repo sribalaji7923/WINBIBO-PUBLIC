@@ -1,14 +1,27 @@
-import { useEffect, useState } from 'react'; 
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router'; 
 import SSRProvider from 'react-bootstrap/SSRProvider';
 import { DefaultSeo } from 'next-seo';
 import SEO from 'next-seo.config';
-import 'assets/scss/main.scss';  
-import Spinner from 'react-bootstrap/Spinner';  
-
+import 'assets/scss/main.scss';
+import Spinner from 'react-bootstrap/Spinner';
 
 const MyApp = ({ Component, pageProps }) => {
   const [isOffline, setIsOffline] = useState(false); // State for network status
-  const [loading, setLoading] = useState(true); // State to handle splash screen 
+  const [loading, setLoading] = useState(true); // State to handle splash screen
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      // scroll to top smoothly on every route change
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   // Check network status
   useEffect(() => {
@@ -40,7 +53,7 @@ const MyApp = ({ Component, pageProps }) => {
   }, []);
 
   return (
-    <> 
+    <>
       <DefaultSeo {...SEO} />
       <SSRProvider>
         {loading ? (

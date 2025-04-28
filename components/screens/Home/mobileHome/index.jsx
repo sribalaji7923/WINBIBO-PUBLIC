@@ -7,13 +7,11 @@ import {
   FollowUs,
 } from './components';
 import FaqCommon from '@/components/common/FaqCommon';
-import { faqHomeData } from '@/service/constant';
-import { PwaInstallProvider } from '@/components/common/useInstallPWA';
+import { faqHomeData } from '@/service/constant'; 
 
 export const MobileHome = () => {
   return (
-    <div style={{ padding: '0px 20px' }}>
-      <PwaInstallProvider>
+    <div style={{ padding: '0px 20px' }}> 
         <MobileBanner />
         <SkillGames />
         {/* <HowToInstall /> */}
@@ -23,8 +21,7 @@ export const MobileHome = () => {
           title="MORE QUESTIONS?"
           subtitle="Here are our FAQ’s"
         />
-        <FollowUs />
-      </PwaInstallProvider>
+        <FollowUs /> 
     </div>
   );
 };

@@ -36,12 +36,12 @@ export const BalloonPopDetails = () => {
         <div className={classes.detailsDesktop}>
           <DesktopBanner />
         </div>
-        <AboutGame aboutGame={aboutGameRockPaperScissors} />
+        <AboutGame aboutGame={aboutGameRockPaperScissors} isKey={1} />
         <FreeStyle freeStyle={freeStyleRockPaperScissors} />
         <DownloadGames />
         <HowToInstall />
         <PlayGame playGames={playGamesRockPaperScissors} />
-        <WhyPlay whyPlayGames={whyPlayGamesRockPaperScissors} />
+        <WhyPlay whyPlayGames={whyPlayGamesRockPaperScissors} isKey={1}/>
         <CommmonTerms commonTerm={commonTermsRockPaperScissors} />
         <CommmonTerms commonTerm={tipsTricksRockPaperScissors} />
         <SkillGames />

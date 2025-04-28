@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './whyPlay.module.scss';
 
-const WhyPlay = ({ whyPlayGames }) => {
+const WhyPlay = ({ whyPlayGames, isKey  }) => {
   const { title, subTitle, body, steps } = whyPlayGames;
   return (
     <div className="container">
@@ -19,7 +19,11 @@ const WhyPlay = ({ whyPlayGames }) => {
           <div className="col-12">
             <div className={classes.downloadCard}>
               <div className={classes.downloadHead}>
-                <img src="/images/why_play_carrom.png" alt="why_play_carrom" />
+                {isKey === 1 ? (
+                  <img src="/images/skill/rps_game_v2.svg" alt="about-banner" />
+                ) : (
+                  <img src="/images/2048.svg" alt="about-banner" />
+                )}
               </div>
               <div className={classes.downloadBody}>
                 <ul>

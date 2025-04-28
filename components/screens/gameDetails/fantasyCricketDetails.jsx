@@ -36,7 +36,7 @@ export const FantasyCricketDetails = () => {
         <div className={classes.detailsDesktop}>
           <DesktopBanner />
         </div>
-        <AboutGame aboutGame={aboutGameFantasyCricket} />
+        <AboutGame aboutGame={aboutGameFantasyCricket} isKey={2} />
         <FreeStyle freeStyle={freeStyleFantasyCricket} />
         <DownloadGames />
         <div style={{ paddingBottom: '30px' }}>
