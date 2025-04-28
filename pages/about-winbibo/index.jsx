@@ -7,15 +7,14 @@ const AboutWinbiboPage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
+        title="About Winbibo – Our Mission & Team"
+        description="Learn about Winbibo’s story, meet our team, and see how we power real-cash gaming."
         canonical={`${config.baseUrl}/about-winbibo`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
         openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
           url: `${config.baseUrl}/about-winbibo`,
+          title: 'About Winbibo – Our Mission & Team',
           description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
+            'Learn about Winbibo’s story, meet our team, and see how we power real-cash gaming.',
         }}
       />
       <AboutWinbibo />

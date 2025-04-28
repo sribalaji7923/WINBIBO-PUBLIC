@@ -7,16 +7,8 @@ const HomePage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
-        canonical={`${config.baseUrl}`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
-        openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
-          url: `${config.baseUrl}`,
-          description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
-        }}
+        title="Winbibo – Play Real-Cash Games Online"
+        canonical={config.baseUrl}
       />
       <HomeComponent />
     </MainLayout>

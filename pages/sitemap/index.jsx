@@ -9,15 +9,13 @@ const SiteMapPage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
+        title="Sitemap – Winbibo"
+        description="Quick links to every page on Winbibo."
         canonical={`${config.baseUrl}/sitemap`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
         openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
           url: `${config.baseUrl}/sitemap`,
-          description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
+          title: 'Sitemap – Winbibo',
+          description: 'Quick links to every page on Winbibo.',
         }}
       />
       <div style={{ padding: '20px' }}>

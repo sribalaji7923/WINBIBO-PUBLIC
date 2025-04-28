@@ -7,15 +7,14 @@ const BalloonPopPage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
+        title="Rock-Paper-Scissors – Play RPS for Real Cash"
+        description="Challenge friends in real-time RPS matches and win cash on Winbibo."
         canonical={`${config.baseUrl}/casual-games/rps`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
         openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
           url: `${config.baseUrl}/casual-games/rps`,
+          title: 'Rock-Paper-Scissors – Play RPS for Real Cash',
           description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
+            'Challenge friends in real-time RPS matches and win cash on Winbibo.',
         }}
       />
       <BalloonPopDetails />

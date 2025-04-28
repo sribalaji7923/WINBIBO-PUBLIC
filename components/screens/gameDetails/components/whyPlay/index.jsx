@@ -20,7 +20,7 @@ const WhyPlay = ({ whyPlayGames, isKey  }) => {
             <div className={classes.downloadCard}>
               <div className={classes.downloadHead}>
                 {isKey === 1 ? (
-                  <img src="/images/skill/rps_game_v2.svg" alt="about-banner" />
+                  <img src="/images/skill/rps_game_v2.png" alt="about-banner" />
                 ) : (
                   <img src="/images/2048.svg" alt="about-banner" />
                 )}

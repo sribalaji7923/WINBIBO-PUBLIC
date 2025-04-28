@@ -7,15 +7,14 @@ const FaqPage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
+        title="FAQ – Frequently Asked Questions"
+        description="All your questions about games, payouts, accounts, and more answered here."
         canonical={`${config.baseUrl}/faq`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
         openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
           url: `${config.baseUrl}/faq`,
+          title: 'FAQ – Frequently Asked Questions',
           description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
+            'All your questions about games, payouts, accounts, and more answered here.',
         }}
       />
       <Faq />

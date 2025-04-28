@@ -9,15 +9,14 @@ const TermsAndConditionsPage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
+        title="Responsible Gaming – Play Safely"
+        description="Learn about Winbibo’s tools and support for safe, responsible play."
         canonical={`${config.baseUrl}/responsible-gaming`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
         openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
           url: `${config.baseUrl}/responsible-gaming`,
+          title: 'Responsible Gaming – Play Safely',
           description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
+            'Learn about Winbibo’s tools and support for safe, responsible play.',
         }}
       />
       <div style={{ padding: '20px' }}>

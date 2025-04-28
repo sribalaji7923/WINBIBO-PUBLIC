@@ -7,15 +7,14 @@ const TwoZeroFourEightPage = () => {
   return (
     <MainLayout>
       <NextSeo
-        title={`Winbibo - Play money winning games | Online real cash games`}
+        title="2048 – Play 2048 for Real Cash"
+        description="Slide tiles, hit 2048 and win real cash prizes on Winbibo."
         canonical={`${config.baseUrl}/casual-games/2048`}
-        description="Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation."
         openGraph={{
-          type: 'website',
-          title: `Winbibo - Play money winning games | Online real cash games`,
           url: `${config.baseUrl}/casual-games/2048`,
+          title: '2048 – Play 2048 for Real Cash',
           description:
-            'Winbibo offers reliable and efficient technology services. We provide customized solutions for your business needs. Contact us today for a consultation.',
+            'Slide tiles, hit 2048 and win real cash prizes on Winbibo.',
         }}
       />
       <TwoZeroFourEightDetails />
