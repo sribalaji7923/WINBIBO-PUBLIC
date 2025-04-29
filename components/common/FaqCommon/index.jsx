@@ -7,8 +7,7 @@ const FaqCommon = ({ faqData, title, subtitle }) => {
 
   const handleAccordionClick = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
-  };
-
+  }; 
   return (
     <div className="container">
       <div className="faq">
