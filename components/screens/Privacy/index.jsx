@@ -8,226 +8,192 @@ const PrivacyComponent = () => {
         <div className={classes.privacyHead}>
           <h2>Privacy Policy</h2>
           <p>
-            This privacy policy (“Privacy Policy”) governs the collection, use,
-            and transfer of personal information by Winbibo Games (hereinafter
-            referred to as “Winbibo”, “We”, “Us”, or “Our”) through our mobile
-            applications or websites (Platform). By using the Platform, you
-            consent to the collection, storage, disclosure, and other uses of
-            your personal information in accordance with this Privacy Policy. If
-            you do not agree, please refrain from using our Services. This
-            policy applies only to services provided by Winbibo Games via the
-            Platform.
+            This Privacy Policy ("Policy") outlines how Winbibo Games
+            ("Winbibo", "We", "Us", or "Our") collects, uses, and protects your
+            personal information through our web application and Progressive Web
+            App ("Platform"). By accessing or using our Platform, you agree to
+            this Policy. If you disagree, please refrain from using our
+            services.
           </p>
           <p>
-            For the purposes of this Privacy Policy,{' '}
-            <span>“Sensitive Personal Data or Information”</span>
-            means any personal information that consists of: (i) passwords, (ii)
-            financial information (e.g., bank account details, payment methods),
-            (iii) health conditions, (iv) medical history, and (v) biometric
-            data. We adhere to the Information Technology (Reasonable Security
-            Practices and Procedures and Sensitive Personal Data or Information)
-            Rules, 2011, in collecting and processing such sensitive data.
+            For the purposes of this Policy, "Sensitive Personal Data or
+            Information" includes passwords, financial data, health records, and
+            biometric information, as defined under the Information Technology
+            (Reasonable Security Practices and Procedures and Sensitive Personal
+            Data or Information) Rules, 2011.
           </p>
         </div>
       </div>
+
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>i. Our Business & Policy Applicability</h2>
+          <h2>i. Our Business & Policy Scope</h2>
           <p>
-            Winbibo Games operates platforms that offer skill-based games, such
-            as Rock Paper Scissors, 2048, and fantasy cricket. By accessing
-            our Platform, users (hereinafter referred to as{' '}
-            <span>“Users/You”</span>) can engage in various online skill games.
-            To use our Services, you must be at least 18 years old and reside in
-            a region where such games are legally permissible. We do not
-            knowingly collect any Personal Information from minors. If such
-            information is inadvertently provided, we will promptly delete it.
-            If you are aware of a minor providing personal information, please
-            contact our support team at{' '}
+            Winbibo Games operates skill-based games such as Rock Paper Scissors
+            and 2048, accessible via web and PWA platforms. Our services are
+            intended for users aged 18 years and above, located in jurisdictions
+            where such skill games are legally permitted. We do not knowingly
+            collect data from minors. If you are aware of any such collection,
+            please notify us at{' '}
             <a href="mailto:support@winbibo.com">support@winbibo.com</a>.
           </p>
           <p>
-            This Privacy Policy does not apply to third-party websites or
-            services that you may interact with while using the Platform. We are
-            not responsible for the practices or content of third-party
-            services.
+            This Policy does not apply to third-party websites or services
+            linked through our Platform.
           </p>
         </div>
       </div>
+
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>ii. Collection & Use of Information</h2>
+          <h2>ii. Information Collection</h2>
           <p>
-            <span>A. Personal Information</span> We collect personal information
-            during registration or through third-party service providers. This
-            may include:
+            <span>A. Personal Information:</span> We collect personal data
+            during registration and interactions with our Platform, including:
           </p>
-          <ol type="1">
+          <ol>
             <li>
-              Phone number, name, location (we do not collect user email IDs).
+              Full name, phone number, and region (email ID not mandatory).
             </li>
             <li>
-              Bank account details, payment methods (including UPI or Virtual
-              Payment Addresses), and KYC documents.
+              Bank account details, payment identifiers (e.g., UPI IDs), and KYC
+              documents if required by law.
             </li>
             <li>
-              Customer support interactions: Any information shared during
-              customer service interactions, such as gameplay activity, user ID,
-              or payment issues.
+              Support communication records including gameplay activities and
+              payment issues.
             </li>
           </ol>
           <p>
-            <span>B. Non-Personal Data:</span> We may collect data like device
-            information, call logs, and metadata to analyze player activity and
-            improve the user experience. This may include:
+            <span>B. Non-Personal Information:</span> We may collect device
+            data, log information, location data, and usage analytics to improve
+            Platform functionality and user experience.
           </p>
-          <ol type="1">
-            <li>
-              Advertising Identifiers: We and third-party advertisers may use
-              identifiers to optimize the delivery of ads relevant to your
-              interests.
-            </li>
-            <li>
-              Location Services: We use location information to verify you are
-              accessing the Platform from permissible regions.
-            </li>
-            <li>
-              Log Data: This includes IP addresses, browser type, device IDs,
-              and usage data to improve and personalize the Services.
-            </li>
-            <li>
-              Third-Party Services: We use third-party services for hosting and
-              analytics. These providers may collect and process data like
-              cookies, location, and device identifiers.
-            </li>
-          </ol>
         </div>
       </div>
+
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
           <h2>iii. Use of Information</h2>
           <p>
-            Personal information may be used to contact you, improve our
-            Services, facilitate transactions, and personalize your experience.
-            We may use your financial information (e.g., UPI handles) to
-            streamline future transactions.
+            Your information enables us to operate, improve, and personalize our
+            services, facilitate secure transactions, prevent fraud, and comply
+            with legal obligations.
           </p>
         </div>
       </div>
+
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>iv. Information Sharing & Disclosure</h2>
-          <p>
-            We may share your Personal Information with third parties under the
-            following circumstances:
-          </p>
-          <ol type="1">
+          <h2>iv. Disclosure of Information</h2>
+          <p>We may share your information under these circumstances:</p>
+          <ol>
             <li>
-              <span>Service Provision:</span> We may share information with
-              payment processors to facilitate transactions (such as payments
-              and withdrawals).
+              <span>Service Providers:</span> Payment processors, hosting
+              partners, SMS gateways, and analytics providers.
             </li>
             <li>
-              <span>Law Enforcement:</span> Disclosure as required by law or for
-              legal proceedings.
+              <span>Legal Compliance:</span> To comply with legal requirements
+              or enforce our Terms of Use.
             </li>
             <li>
-              <span>Affiliates:</span> Sharing information with business
-              partners or affiliates for marketing or service enhancement
-              purposes.
-            </li>
-            <li>
-              <span>Change in Control:</span> If Winbibo undergoes a merger or
-              sale, your information may be transferred to the new entity.
+              <span>Corporate Restructuring:</span> During mergers,
+              acquisitions, or asset sales.
             </li>
           </ol>
-          <div>
-            {/* <h3>Third-Party Data Recipients</h3> */}
-            <table className={classes.serviceTable}>
-              <thead>
-                <tr>
-                  <th>Third-Party Entity Name</th>
-                  <th>Service/Function</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Cashfree Payment Gateway</td>
-                  <td>Facilitate deposits and withdrawals on our platform</td>
-                </tr>
-                <tr>
-                  <td>AWS Hosting Services (India)</td>
-                  <td>
-                    Cloud hosting and data storage for platform functionality
-                  </td>
-                </tr>
-                <tr>
-                  <td>SMS OTP Providers</td>
-                  <td>For sending OTP for user authentication and security</td>
-                </tr>
-                <tr>
-                  <td>IP Geolocation Services</td>
-                  <td>Ensure platform access from allowed regions</td>
-                </tr>
-                <tr>
-                  <td>Data Analytics Providers</td>
-                  <td>
-                    Analyze player activity and optimize platform performance
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table className={classes.serviceTable}>
+            <thead>
+              <tr>
+                <th>Entity</th>
+                <th>Service</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cashfree Payments</td>
+                <td>Payment gateway for deposits and withdrawals</td>
+              </tr>
+              <tr>
+                <td>Digital Ocean Hosting</td>
+                <td>Secure cloud hosting and data storage</td>
+              </tr>
+              <tr>
+                <td>SMS Providers</td>
+                <td>OTP transmission for account security</td>
+              </tr>
+              <tr>
+                <td>Geolocation Services</td>
+                <td>Regional verification for platform access</td>
+              </tr>
+              <tr>
+                <td>Analytics Tools</td>
+                <td>Platform performance and activity analysis</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
           <h2>v. Your Rights</h2>
           <p>
-            You have the right to access, modify, or request deletion of your
-            personal data. Requests can be made by contacting us at
+            You may access, update, or request deletion of your data by
+            contacting{' '}
             <a href="mailto:support@winbibo.com">support@winbibo.com</a>. We
-            will respond within the legally required timeframe.
+            will respond in accordance with applicable laws.
           </p>
           <p>
-            Personal data will be retained only as long as necessary to provide
-            the Services or to comply with legal obligations.
+            Data is retained only for the duration necessary to provide services
+            or comply with legal obligations.
           </p>
         </div>
       </div>
+
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
           <h2>vi. Data Security</h2>
           <p>
-            We take appropriate technical and organizational measures to protect
-            your data. Our servers are hosted on AWS services in India. While we
-            strive to ensure data security, we cannot guarantee the absolute
-            security of data during transmission over the internet.
+            We implement commercially reasonable security measures to protect
+            your information. Despite our efforts, no security system is
+            impenetrable, and we cannot guarantee absolute security.
           </p>
         </div>
       </div>
 
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>vii. Termination & Data Retention</h2>
+          <h2>vii. Cookies and Tracking Technologies</h2>
           <p>
-            Your information will be retained for as long as needed to provide
-            the Services or as required by law. After this period, we will
-            delete or anonymize your data.
+            Our Platform may use cookies and similar technologies to enhance
+            user experience, analyze usage patterns, and deliver personalized
+            content. You may manage your cookie preferences through browser
+            settings.
           </p>
         </div>
       </div>
 
       <div className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>viii. Grievance Redressal</h2>
+          <h2>viii. Changes to this Privacy Policy</h2>
           <p>
-            For any privacy-related concerns or to exercise your rights, please
-            contact us at{' '}
-            <a href="mailto:support@winbibo.com">support@winbibo.com</a>. We
-            will address your requests in a timely manner. Any disputes arising
-            from this Privacy Policy will be subject to the exclusive
-            jurisdiction of the courts located in Trichy, Tamil Nadu, India.
+            We reserve the right to update or modify this Privacy Policy at any
+            time. Changes will be effective immediately upon posting on our
+            Platform. Your continued use constitutes acceptance of the updated
+            Policy.
+          </p>
+        </div>
+      </div>
+
+      <div className={classes.privacyMain}>
+        <div className={classes.privacyHead}>
+          <h2>ix. Grievance Redressal</h2>
+          <p>
+            For any questions, complaints, or disputes regarding your data or
+            this Policy, please contact{' '}
+            <a href="mailto:support@winbibo.com">support@winbibo.com</a>.
+            Disputes will be governed by Indian laws and subject to the
+            exclusive jurisdiction of the courts in Trichy, Tamil Nadu, India.
           </p>
         </div>
       </div>

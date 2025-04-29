@@ -1,20 +1,20 @@
 const config = {
   development: {
-    baseUrl: 'http://winbibo.com',
+    baseUrl: 'https://winbibo.com',
     redirectPwaApp: 'https://games.winbibo.com/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
   staging: {
-    baseUrl: 'http://winbibo.com',
+    baseUrl: 'https://winbibo.com',
     redirectPwaApp: 'https://games.winbibo.com/login',
     api: {
       baseUrl: 'api-baseurl',
     },
   },
   production: {
-    baseUrl: 'http://winbibo.com',
+    baseUrl: 'https://winbibo.com',
     redirectPwaApp: 'https://games.winbibo.com/login',
     api: {
       baseUrl: 'api-baseurl',
@@ -22,12 +22,11 @@ const config = {
   },
 };
 
-export const baseURL = 'http://winbibo.com';
+export const baseURL = 'https://games.winbibo.com';
 export const endpoints = {
-  GET_ALL_BLOGS: `${baseURL}/getBlog`,
-  GET_ALL_SUCCESS_STORIES: `${baseURL}/getSuccessStories`,
-  CREATE_CONTACT_US: `${baseURL}/addContact`,
+  CREATE_CONTACT_US: `https://games.winbibo.com/api/v2/contact-us`,
 };
+
 
 let configBasedOnEnv = {};
 

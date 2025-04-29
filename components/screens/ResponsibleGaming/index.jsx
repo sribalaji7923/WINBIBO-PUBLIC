@@ -4,129 +4,101 @@ import classes from './responsible.module.scss';
 const ResponsibleGamingComponent = () => {
   return (
     <div className={`${classes.responsible} container`}>
-      <div className={classes.privacyMain}>
+      {/* Commitment to Safe Play */}
+      <section className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>Responsible Gaming at Winbibo</h2>
+          <h2>Our Commitment to Responsible Gaming</h2>
           <p>
-            At Winbibo Games, we are committed to promoting responsible gaming
-            practices. We believe gaming should be a source of entertainment,
-            enjoyed within healthy limits, and never to the detriment of your
-            mental, physical, or financial well-being. With the right approach,
-            our games can offer a fun and engaging experience while helping to
-            enhance decision-making, strategy, and quick thinking.
-          </p>
-          <p>
-            We strive to create an enjoyable environment, and as a responsible
-            gaming platform, we take the following steps to ensure a safe and
-            secure experience for all users:
+            At Winbibo Games, we believe that gaming should be engaging and
+            rewarding, while maintaining your well-being. We are dedicated to
+            fostering a safe environment, supporting informed decisions, and
+            preventing gambling-related harm.
           </p>
           <ul className={classes.disc}>
             <li>
-              We comply with all applicable laws and regulations governing
-              real-money gaming to ensure a safe gaming environment.
+              <strong>Age Verification:</strong> Only users aged 18 and above
+              may create accounts. We verify age through OTP and KYC checks.
             </li>
             <li>
-              Only users aged 18+ can participate in our games. We verify age
-              through screening techniques to ensure responsible participation.
+              <strong>Deposit & Time Limits:</strong> Set daily or weekly
+              deposit and session timers to control your spending and playtime.
             </li>
             <li>
-              Clear and detailed game rules are provided before each game. These
-              rules are accessible within the app at all times in both video and
-              text formats.
+              <strong>Self-Exclusion:</strong> You can take a break or
+              deactivate your account for a cooling-off period at any time.
             </li>
             <li>
-              Our customer care team is available 24/7 at{' '}
-              <a href="mailto:support@winbibo.com">support@winbibo.com</a> to
-              assist with any concerns.
+              <strong>Reality Checks:</strong> Receive periodic reminders about
+              time and money spent during your sessions.
             </li>
             <li>
-              We offer a variety of game and tournament options to cater to
-              different preferences, ensuring users can choose games that suit
-              their comfort level.
+              <strong>Support Access:</strong> Our support team is available
+              24/7 at{' '}
+              <a href="mailto:support@winbibo.com">support@winbibo.com</a> for
+              any concerns.
+            </li>
+            <li>
+              <strong>Regulatory Compliance:</strong> We adhere to all
+              applicable Indian laws and regulations for skill-based gaming.
             </li>
           </ul>
-          <p>
-            Gaming can be engaging, but we understand the potential for
-            addiction if not approached with care. To help you enjoy gaming
-            without falling into unhealthy habits, we encourage the following
-            DOs and DON’Ts:
-          </p>
         </div>
-      </div>
+      </section>
 
-      <div className={classes.privacyMain}>
+      {/* Healthy Play Guidelines */}
+      <section className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>DO'S</h2>
+          <h2>DOs: Healthy Gaming Habits</h2>
           <ul className={classes.disc}>
             <li>
-              Play for fun and entertainment, not as a means of generating
-              income or affecting your financial well-being.
+              Play for fun and skill development, not as a source of income.
             </li>
             <li>
-              Set a budget in advance and only use disposable income that you
-              can afford to lose.
+              Set a budget and only wager disposable income you can afford to
+              lose.
             </li>
             <li>
-              Limit the time you spend playing and avoid exceeding your set
-              playtime.
+              Use account settings to apply deposit limits and session timers.
             </li>
-            <li>
-              Set deposit limits to ensure that you don’t overspend beyond your
-              budget.
-            </li>
-            <li>
-              If you’re experiencing a losing streak, take a break to avoid
-              making impulsive decisions.
-            </li>
-            <li>
-              Contact our support team if you feel that your gaming habits are
-              becoming problematic.
-            </li>
+            <li>Take regular breaks and avoid long, uninterrupted sessions.</li>
+            <li>Pause play if you feel stressed, upset, or distracted.</li>
+            <li>Seek help if you notice unhealthy gaming patterns.</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <div className={classes.privacyMain}>
+      {/* Avoid Harmful Behaviors */}
+      <section className={classes.privacyMain}>
         <div className={classes.privacyHead}>
-          <h2>DON'TS</h2>
+          <h2>DON’Ts: Prevent Unhealthy Gaming</h2>
           <ul className={classes.disc}>
+            <li>Don’t chase losses or gamble to recover funds.</li>
+            <li>Never borrow money or use essential funds for gaming.</li>
+            <li>Avoid gaming while impaired by stress or substances.</li>
+            <li>Do not ignore your own limits or account notifications.</li>
+            <li>Respect other players; abusive behavior is not tolerated.</li>
             <li>
-              Don’t play games with the intention of earning money or recovering
-              losses.
-            </li>
-            <li>
-              Avoid playing impulsively or making rash decisions while playing.
-            </li>
-            <li>Don’t borrow money to fund your gaming sessions.</li>
-            <li>
-              Avoid playing if you're stressed or not in the right mental state,
-              as this can negatively impact your decisions.
-            </li>
-            <li>
-              Don’t chase your losses. Instead, focus on improving your skills
-              and learning from previous games.
-            </li>
-            <li>
-              Monitor how much time and money you spend on games to avoid
-              overindulgence.
-            </li>
-            <li>
-              Don’t play during work or important engagements. Ensure your mind
-              is free from distractions.
-            </li>
-            <li>
-              Always maintain a respectful attitude towards other players and
-              avoid engaging in abusive or inappropriate behavior.
+              Do not share your account credentials or play on multiple
+              accounts.
             </li>
           </ul>
           <p>
-            If you need further assistance or guidance, feel free to reach out
-            to us at{' '}
-            <a href="mailto:support@winbibo.com">support@winbibo.com</a>, and
-            we’ll be happy to help.
+            For additional support, you can:
+            <ul>
+              <li>
+                Contact us at{' '}
+                <a href="mailto:support@winbibo.com">support@winbibo.com</a>.
+              </li>
+              <li>
+                Use self-exclusion and limit tools in your account settings.
+              </li>
+              <li>
+                Consult professional counseling or helpline services if needed.
+              </li>
+            </ul>
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -41,14 +41,14 @@ export const Footer = ({ isFloat = false }) => {
               </ul>
             </div>
           </div>
-          <div className="col-6 col-md-3">
+          {/* <div className="col-6 col-md-3">
             <div className={classes.list} style={{ paddingBottom: '20px' }}>
               <ul>
                 <li className={classes.title}>Fantasy Games</li>
                 <li>Fantasy Cricket</li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={classes.footerBanner}>
           <img src="/images/footer_banner.png" alt="banner" />
@@ -71,6 +71,11 @@ export const Footer = ({ isFloat = false }) => {
                 <li>
                   <Link href="/terms-and-conditions">
                     <a>Terms & Conditions</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/refund-and-cancellation">
+                    <a> Refund & Cancellation Policy</a>
                   </Link>
                 </li>
                 <li>

@@ -28,6 +28,11 @@ const SiteMap = () => {
             <Link href="/terms-and-conditions">Terms & Conditions</Link>
           </li>
           <li>
+            <Link href="/refund-and-cancellation">
+               Refund & Cancellation Policy 
+            </Link>
+          </li>
+          <li>
             <Link href="/responsible-gaming">Responsible Gaming Policy</Link>
           </li>
           <li>
@@ -46,14 +51,14 @@ const SiteMap = () => {
           </li>
         </ul>
       </div>
-      <div className={classes.content}>
+      {/* <div className={classes.content}>
         <h6>Fantasy Games</h6>
         <ul>
           <li>
             <Link href="/fantasy-games/cricket">Fantasy Cricket</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
