@@ -208,7 +208,7 @@ export const Header = ({ isFloat = false }) => {
                           </div>
                         )}
                       </div>
-                      <div className={classes.accordionItem}>
+                      {/* <div className={classes.accordionItem}>
                         <div
                           className={classes.accordionHeader}
                           onClick={() => toggleSubAccordion('0-2')}
@@ -231,7 +231,7 @@ export const Header = ({ isFloat = false }) => {
                             </ul>
                           </div>
                         )}
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
