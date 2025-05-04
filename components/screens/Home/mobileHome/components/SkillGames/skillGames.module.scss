@@ -23,6 +23,7 @@
   .skillImages {
     img {
       width: 100%;
+      border-radius: 15px;
     }
   }
   .skillCricket {
@@ -54,6 +55,12 @@
       img {
         height: 100%;
         margin: 0px;
+      }
+    }
+    .skillImages {
+      img {
+        border-radius: 15px;
+        height: 260px;
       }
     }
   }

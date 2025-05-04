@@ -107,7 +107,7 @@ export const HowToInstall = () => {
                   <p>Step 1</p>
                   <h6>Click “Download” Button to continue.</h6>
                 </div>
-                <img src="/images/how_to_install/step_1.png" alt="step1" />
+                {/* <img src="/images/how_to_install/step_1.png" alt="step1" /> */}
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -116,7 +116,7 @@ export const HowToInstall = () => {
                   <p>Step 2</p>
                   <h6>Click “Install” Button to continue.</h6>
                 </div>
-                <img src="/images/how_to_install/step_1.png" alt="step1" />
+                {/* <img src="/images/how_to_install/step_1.png" alt="step1" /> */}
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -125,7 +125,7 @@ export const HowToInstall = () => {
                   <p>Step 3</p>
                   <h6>Click “Open” Button to continue.</h6>
                 </div>
-                <img src="/images/how_to_install/step_1.png" alt="step1" />
+                {/* <img src="/images/how_to_install/step_1.png" alt="step1" /> */}
               </div>
             </SwiperSlide>
           </Swiper>

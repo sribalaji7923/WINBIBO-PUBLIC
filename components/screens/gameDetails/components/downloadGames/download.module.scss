@@ -52,6 +52,9 @@
     .downloadHead {
       display: flex;
       align-items: center;
+      img {
+        max-width: 30px;
+      }
       p {
         margin: 0px;
         color: #fff;

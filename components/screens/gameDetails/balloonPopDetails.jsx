@@ -39,7 +39,7 @@ export const BalloonPopDetails = () => {
         <AboutGame aboutGame={aboutGameRockPaperScissors} isKey={1} />
         <FreeStyle freeStyle={freeStyleRockPaperScissors} />
         <DownloadGames />
-        <HowToInstall />
+        {/* <HowToInstall /> */}
         <PlayGame playGames={playGamesRockPaperScissors} />
         <WhyPlay whyPlayGames={whyPlayGamesRockPaperScissors} isKey={1}/>
         <CommmonTerms commonTerm={commonTermsRockPaperScissors} />

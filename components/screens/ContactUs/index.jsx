@@ -190,8 +190,7 @@ const ContactUs = () => {
               <strong>Phone (WhatsApp):</strong> +91 8072177472
             </p>
             <p>
-              <strong>Address:</strong> Winbibo Games Pvt. Ltd., 123 Gaming
-              Street, Trichy, Tamil Nadu, India.
+              <strong>Address:</strong> Winbibo Games., 1/73 Bus stand, Trichy, Tamil Nadu, India.
             </p>
           </div>
         </div>

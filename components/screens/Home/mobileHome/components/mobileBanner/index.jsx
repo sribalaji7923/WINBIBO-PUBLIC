@@ -28,10 +28,10 @@ export const MobileBanner = ({
                   Play Games & Win Big in 45 Seconds!
                 </h4>
                 <div className={classes.certificate}>
-                  <img
+                  {/* <img
                     src="/images/home/rng_certificate.png"
                     alt="Rng Ceritificate"
-                  />
+                  /> */}
                   <img
                     src="/images/home/Instant_withdrawals.png"
                     alt="Rng Ceritificate"

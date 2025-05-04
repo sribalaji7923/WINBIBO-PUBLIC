@@ -20,7 +20,7 @@ export const ReasonToPlay = () => {
                 <p className={classes.reasonDec}>
                   Play skill-based games and earn exciting prizes.
                 </p>
-                <img src="/images/reason/reason_1.png" alt="step1" />
+                {/* <img src="/images/reason/reason_1.png" alt="step1" /> */}
               </div>
             </div>
             <div className={`col-6 col-md-4 pb-3 ${classes.columnRight}`}>

@@ -39,9 +39,9 @@ export const TwoZeroFourEightDetails = () => {
         <AboutGame aboutGame={aboutGame2048} isKey={2} />
         <FreeStyle freeStyle={freeStyle2048} />
         <DownloadGames />
-        <div style={{ paddingBottom: '30px' }}>
+        {/* <div style={{ paddingBottom: '30px' }}>
           <HowToInstall />
-        </div>
+        </div> */}
         <PlayGame playGames={playGames2048} />
         <WhyPlay whyPlayGames={whyPlayGames2048} isKey={2} />
         <CommmonTerms commonTerm={commonTerms2048} />

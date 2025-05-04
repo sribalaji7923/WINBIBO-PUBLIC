@@ -39,9 +39,9 @@ export const FantasyCricketDetails = () => {
         <AboutGame aboutGame={aboutGameFantasyCricket} isKey={2} />
         <FreeStyle freeStyle={freeStyleFantasyCricket} />
         <DownloadGames />
-        <div style={{ paddingBottom: '30px' }}>
+        {/* <div style={{ paddingBottom: '30px' }}>
           <HowToInstall />
-        </div>
+        </div> */}
         <PlayGame playGames={playGamesFantasyCricket} />
         <WhyPlay whyPlayGames={whyPlayGamesFantasyCricket} />
         <CommmonTerms commonTerm={commonTermsFantasyCricket} />

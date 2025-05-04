@@ -51,7 +51,7 @@ export const Footer = ({ isFloat = false }) => {
           </div> */}
         </div>
         <div className={classes.footerBanner}>
-          <img src="/images/footer_banner.png" alt="banner" />
+          {/* <img src="/images/footer_banner.png" alt="banner" /> */}
           <p>
             Winbibo is open to individuals over 18 years of age in states of
             India where games of skill are legally permitted. Games on the
