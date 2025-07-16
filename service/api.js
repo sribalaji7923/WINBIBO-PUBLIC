@@ -6,7 +6,7 @@ import {
 } from './utilities';
 
 /**
- *  Customized axios function for api calls
+ *  Customized axios function for api calls 
  * @returns {Promise} that contains the api data's response
  */
 
